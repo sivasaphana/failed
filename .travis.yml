@@ -47,6 +47,7 @@ install:
   - Rscript -e "if (!require('devtools')) install.packages('devtools')"
   - Rscript -e 'devtools::install_deps(dep = TRUE); update.packages(.libPaths()[1], ask = FALSE)'
   - Rscript -e "if (!require('covr')) install.packages('covr')"
+  - Rscript -e "if (!require('sqldf')) install.packages('sqldf')"
 
 cache:
   directories:
