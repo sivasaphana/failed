@@ -66,8 +66,11 @@ after_success:
   - export R_PKG="$(basename $TRAVIS_REPO_SLUG)"
   - "[ $TARGET = integration ] && (wget -q -O - http://yihui.name/xran/r-xran | bash)"
   
-  after_failure:
+  after_failure: 
+    echo $TRAVIS_TEST_RESULT
     - dump_logs
+    
+    
     
 # run test coverage only for the travis build
   - "[ $TARGET = travis ] && Rscript -e 'covr::coveralls()'"
