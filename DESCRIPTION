@@ -99,6 +99,7 @@ URL: http://yihui.name/knitr/
 BugReports: https://github.com/yihui/knitr/issues
 VignetteBuilder: knitr
 Collate:
+    'asample.R'
     'block.R'
     'cache.R'
     'utils.R'
@@ -126,7 +127,6 @@ Collate:
     'parser.R'
     'pattern.R'
     'rocco.R'
-    'sample.R'
     'spin.R'
     'table.R'
     'template.R'
